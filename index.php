@@ -11,5 +11,4 @@
 			}else{
 				$ip = $remote;
 			}
-			$ip_data = @json_decode(file_get_contents("http://www.geoplugin.net/json.gp?ip=".$ip));    
-			print_r ($ip_data);
+			print_r(file_get_contents("http://www.geoplugin.net/json.gp?ip=".$ip));
