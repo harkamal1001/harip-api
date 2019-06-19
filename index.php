@@ -1,5 +1,6 @@
 <?php 
 header("Content-type:application/json");
+header('Access-Control-Allow-Origin: *');
     $client  = $_GET["ip"];
 			$forward = @$_SERVER['HTTP_X_FORWARDED_FOR'];
 			$remote  = @$_SERVER['REMOTE_ADDR'];
