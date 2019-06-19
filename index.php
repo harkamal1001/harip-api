@@ -1,5 +1,5 @@
 <?php 
-header("Content-type:application/json")
+header("Content-type:application/json");
     $client  = $_GET["ip"];
 			$forward = @$_SERVER['HTTP_X_FORWARDED_FOR'];
 			$remote  = @$_SERVER['REMOTE_ADDR'];
